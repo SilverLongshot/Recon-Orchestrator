@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.log
+*.png
+*.json
+recon_data/
+orchestrator_results/
+final_submissions/
+example/
