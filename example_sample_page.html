@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Page for Recon Orchestrator</title>
+</head>
+<body>
+    <h1>Demo: Vulnerable Page</h1>
+
+    <!-- Example of inline JavaScript -->
+    <script>alert("Potential XSS Detected!");</script>
+
+    <!-- Example of form input -->
+    <form action="/submit" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username">
+        <input type="submit" value="Send">
+    </form>
+
+    <!-- Dangerous attributes for DOM classification -->
+    <a href="#" onclick="console.log('clicked');">Click here</a>
+    <div onmouseover="alert('hover')">Hover over me</div>
+
+    <!-- Embed tag example -->
+    <embed src="video.mp4">
+
+</body>
+</html>
